@@ -1,0 +1,19 @@
+package prova;
+
+public class beans {
+
+	//Atributos
+	private int Quantidade;
+	
+	//Set & Get
+	public int getQuantidade() {
+		return Quantidade;
+	}
+	public void setQuantidade(int quantidade) {
+		Quantidade = quantidade;
+	}
+	
+	
+	
+	
+}

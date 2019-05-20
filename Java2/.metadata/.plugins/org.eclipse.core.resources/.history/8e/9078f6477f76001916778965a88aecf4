@@ -1,0 +1,14 @@
+package formularios;
+
+import javax.swing.JPanel;
+
+public class formulario extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public formulario() {
+
+	}
+
+}

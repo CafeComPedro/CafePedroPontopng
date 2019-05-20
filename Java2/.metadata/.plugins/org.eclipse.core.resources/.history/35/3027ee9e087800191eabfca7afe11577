@@ -1,0 +1,35 @@
+package acao;
+
+import beans.beans;
+
+import javax.swing.table.DefaultTableModel;
+
+import Principal.Principal;
+
+public class acao {
+
+	//Cadastrar cargo
+	public void cadastrar(beans j) {
+		Principal.vetorCargos.add(j);
+	}
+	
+	//Selecionar jogos
+	public DefaultTableModel selecionar() {
+		DefaultTableModel dadosTabela = new DefaultTableModel();
+		dadosTabela.addColumn("Colaborador");
+		dadosTabela.addColumn("Salario Líquido");
+
+		
+		for(int i=0; i<Principal.vetorCargos.size(); i++) {
+			dadosTabela.addRow(new Object[] {
+					Principal.vetorCargos.get(i).getColab(),
+					Principal.vetorCargos.get(i).getSalal(),
+
+					
+			});
+		}
+		
+		return dadosTabela;
+	}
+	
+}

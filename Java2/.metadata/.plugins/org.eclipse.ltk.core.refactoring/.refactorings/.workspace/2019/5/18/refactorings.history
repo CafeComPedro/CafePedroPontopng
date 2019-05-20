@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;21 ClasseRandom&apos; to &apos; 21 ClassRandom Exemplos&apos;" description="Rename resource &apos;21 ClasseRandom&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/21 ClasseRandom" name=" 21 ClassRandom Exemplos" stamp="1556816912885" updateReferences="true"/>
+</session>

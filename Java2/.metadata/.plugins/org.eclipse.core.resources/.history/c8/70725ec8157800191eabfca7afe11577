@@ -1,0 +1,73 @@
+package formulario;
+
+import javax.swing.JPanel;
+import javax.swing.JComboBox;
+import javax.swing.JSpinner;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+public class Formulario extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public Formulario() {
+		setLayout(null);
+		
+		JComboBox cbxProdutos = new JComboBox();
+		
+		JSpinner spnQuantidade = new JSpinner();
+		spnQuantidade.setBounds(95, 112, 30, 20);
+		add(spnQuantidade);
+		
+		JSpinner spnQuantidade2 = new JSpinner();
+		spnQuantidade2.setBounds(237, 112, 30, 20);
+		add(spnQuantidade2);
+		
+		JSpinner spnQuantidade3 = new JSpinner();
+		spnQuantidade3.setBounds(357, 112, 30, 20);
+		add(spnQuantidade3);
+		
+		JSpinner spnQuantidade4 = new JSpinner();
+		spnQuantidade4.setBounds(95, 222, 30, 20);
+		add(spnQuantidade4);
+		
+		JSpinner spnQuantidade5 = new JSpinner();
+		spnQuantidade5.setBounds(237, 222, 30, 20);
+		add(spnQuantidade5);
+		
+		JSpinner spnQuantidade6 = new JSpinner();
+		spnQuantidade6.setBounds(357, 222, 30, 20);
+		add(spnQuantidade6);
+		
+		
+		
+		JLabel lblMacarro = new JLabel("Macarr\u00E3o");
+		lblMacarro.setBounds(95, 57, 48, 14);
+		add(lblMacarro);
+		
+		JLabel lblTomate = new JLabel("Tomate");
+		lblTomate.setBounds(237, 57, 48, 14);
+		add(lblTomate);
+		
+		JLabel lblAlma = new JLabel("Alma");
+		lblAlma.setBounds(357, 57, 48, 14);
+		add(lblAlma);
+		
+		JLabel lblNewLabel = new JLabel("A\u00E7ucar");
+		lblNewLabel.setBounds(95, 171, 48, 14);
+		add(lblNewLabel);
+		
+		JLabel lblTempero = new JLabel("Tempero");
+		lblTempero.setBounds(219, 171, 48, 14);
+		add(lblTempero);
+		
+		JLabel lblCocaCola = new JLabel("Coca - cola");
+		lblCocaCola.setBounds(343, 171, 62, 14);
+		add(lblCocaCola);
+		
+		JButton btnLista = new JButton("Lista");
+		btnLista.setBounds(473, 53, 89, 23);
+		add(btnLista);
+	}
+}

@@ -1,0 +1,14 @@
+package Principal;
+
+import Colaborador.Colaborador;
+import Colaborador.Pessoa;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Pessoa p = new Pessoa("Andressa", "Centro", 27);
+		Colaborador c = new Colaborador("Gerente", 40);
+	}
+
+}

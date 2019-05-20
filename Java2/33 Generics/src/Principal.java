@@ -1,0 +1,33 @@
+
+public class Principal {
+
+	/*
+	 E: Ekementos de classe (String, Double, Integer, ArrayList)
+	 T: Elementos do tipo (char, int, double, float, short, long)
+	 K: Chaves (HashMap)
+	 V:Valor (hashMap)
+	 */
+	
+	//Metodo Genérico
+	public static <E> void listar(E[] vetor) {
+		for(E elemento : vetor) {
+			System.out.print(elemento+" ");
+		}
+	}	
+	
+	//Método Principal
+	public static void main(String[] args) {
+
+		//vetores
+		String[] nomes = {"Suellen", "Cleiton", "Paloma"};
+		Integer[] idade = {22, 30, 17};
+		Double[] alturas = {1.70, 1.77, 1.64};
+	
+		//Chamar o metodo de listar
+		listar(nomes);
+		listar(idade);
+		listar(alturas);
+		
+	}
+
+}

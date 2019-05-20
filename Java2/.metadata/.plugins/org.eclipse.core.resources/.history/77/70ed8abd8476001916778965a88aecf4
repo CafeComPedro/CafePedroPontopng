@@ -1,0 +1,117 @@
+package formularios;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JCheckBox;
+import javax.swing.JSpinner;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+
+public class formulario extends JPanel {
+	private JTextField txtColab;
+	private JTextField txtSalab;
+	private JTextField textField_2;
+	private JTextField txtTax;
+	private JTextField txtSalal;
+
+	/**
+	 * Create the panel.
+	 */
+	public formulario() {
+		setLayout(null);
+		
+		JLabel lblColaborador = new JLabel("Colaborador");
+		lblColaborador.setBounds(34, 49, 60, 14);
+		add(lblColaborador);
+		
+		JLabel lblSalrioBruto = new JLabel("Sal\u00E1rio Bruto");
+		lblSalrioBruto.setBounds(24, 88, 70, 14);
+		add(lblSalrioBruto);
+		
+		JLabel lblFaltasNoMs = new JLabel("Faltas no m\u00EAs");
+		lblFaltasNoMs.setBounds(24, 186, 70, 14);
+		add(lblFaltasNoMs);
+		
+		txtColab = new JTextField();
+		txtColab.setBounds(107, 46, 138, 20);
+		add(txtColab);
+		txtColab.setColumns(10);
+		
+		txtSalab = new JTextField();
+		txtSalab.setEnabled(false);
+		txtSalab.setBounds(102, 85, 143, 20);
+		add(txtSalab);
+		txtSalab.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setEnabled(false);
+		textField_2.setBounds(149, 110, 96, 20);
+		add(textField_2);
+		textField_2.setColumns(10);
+		
+		JCheckBox chckbxNewCheckBox = new JCheckBox("Vale Transporte");
+		chckbxNewCheckBox.setBounds(24, 109, 119, 23);
+		add(chckbxNewCheckBox);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setBounds(104, 183, 60, 20);
+		add(spinner);
+		
+		JLabel lblCargo = new JLabel("Cargo");
+		lblCargo.setBounds(336, 46, 29, 14);
+		add(lblCargo);
+		
+		JLabel lblImpostoDeRenda = new JLabel("Imposto de renda");
+		lblImpostoDeRenda.setBounds(281, 114, 103, 14);
+		add(lblImpostoDeRenda);
+		
+		JLabel lblSalarioLiquido = new JLabel("Sal\u00E1rio Liquido");
+		lblSalarioLiquido.setBounds(288, 155, 96, 14);
+		add(lblSalarioLiquido);
+		
+		JCheckBox chckbxNewCheckBox_1 = new JCheckBox("Clube Fidelidade");
+		chckbxNewCheckBox_1.setBounds(457, 84, 109, 23);
+		add(chckbxNewCheckBox_1);
+		
+		txtTax = new JTextField();
+		txtTax.setBounds(394, 110, 172, 20);
+		add(txtTax);
+		txtTax.setColumns(10);
+		
+		txtSalal = new JTextField();
+		txtSalal.setBounds(394, 152, 172, 20);
+		add(txtSalal);
+		txtSalal.setColumns(10);
+		
+		JButton btnCadastrarColaborador = new JButton("Cadastrar Colaborador");
+		btnCadastrarColaborador.setBounds(103, 246, 157, 28);
+		add(btnCadastrarColaborador);
+		
+		JButton btnStatistic = new JButton("Mostrar Estatisticas");
+		btnStatistic.setBounds(288, 246, 143, 28);
+		add(btnStatistic);
+		
+		JComboBox cbxCargo = new JComboBox();
+		cbxCargo.addItem("Estagiário");					//Salab = 900   Vale = 6%   Imposto de renda=0%
+		cbxCargo.addItem("Desenvolvedor Jr.");			//Salab = 1300		'		Imposto de renda=4%
+		cbxCargo.addItem("Desenvolvedor Pleno");		//Salab = 1800		'		Imposto de renda=5,5%
+		cbxCargo.addItem("Desenvolvedor sênior");		//Salab = 2400		'		Imposto de renda=6%
+		cbxCargo.addItem("Analista de sistemas Jr.");	//Salab = 2700		'		Imposto de renda=6,5%
+		cbxCargo.addItem("Anaista de sistemas Pleno");	//Salab = 3200		'		Imposto de renda=7%
+		cbxCargo.addItem("Analista de sistemas Sênior");//Salab = 3600		'		Imposto de renda=7,5%
+		cbxCargo.addItem("Arquiteto de Software");		//Salab = 4400		'		Imposto de renda=8%
+
+		cbxCargo.setBounds(375, 45, 191, 22);
+		add(cbxCargo);
+		
+		JCheckBox chckbxPlanoDeSade = new JCheckBox("Plano de sa\u00FAde");
+		chckbxPlanoDeSade.setBounds(336, 84, 119, 23);
+		add(chckbxPlanoDeSade);
+		
+		
+		
+		
+
+	}
+}
